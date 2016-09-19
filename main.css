@@ -1,0 +1,20 @@
+/*p {
+    color: peachpuff;
+    background-color: dodgerblue;
+} */
+
+.hotshot {
+    border-width: 10px;
+    border-style: groove;
+    border-color: burlywood;
+}
+
+
+#main {
+    background-color: blanchedalmond;
+}
+
+.hotshot > span {
+    color: rebeccapurple;
+    margin: 20px;
+}
