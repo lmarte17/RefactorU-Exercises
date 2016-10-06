@@ -1,0 +1,53 @@
+h3 {
+    color: #FFcc88;
+}
+
+h2 {
+    background-color: white;
+    color: blue;
+}
+
+.box {
+    background-color: peachpuff;
+    color: rgba(25,25,25,.5);
+    height: 100px;
+    width: 25%;
+    border: 2px solid;
+    display: inline-block;
+}
+
+.superbox {
+    position: absolute;
+    top:50px;
+    left: 200px;
+    background-color: peru;
+    border: 2px solid;
+}
+
+#container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(88,88,88,.5);
+}
+
+.navbar {
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+}
+
+.image {
+    height:80px;
+    width: 80px;
+    background-color: tomato;
+    float: left;
+    padding-top: 25px;
+}
+
+.overflow {
+    overflow: hidden;
+    padding: 10px;
+}

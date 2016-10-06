@@ -1,0 +1,18 @@
+.scroll-right {
+   /* position: relative;
+   */
+}
+
+
+.scroll-right img {
+    /*position: absolute;
+    left: 0;
+    transition: left 10s linear 0s; */
+    transform: translateX(0%);
+    transition: transform 2s ease-in-out 4s;
+}
+
+.scroll-right img.animate {
+   /* left: 50%; */
+   transform: translateX(100%);
+}

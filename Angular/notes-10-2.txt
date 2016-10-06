@@ -1,0 +1,18 @@
+Angular:   Model       -- Knows things
+           View        -- Shows things
+           Controller  -- does things
+
+$ === something used by Angular
+
+
+directives === used to make standalone UI components
+services === used to make standalone communications logic
+
+
+__________________________________________________________________________
+
+
+directives:
+
+ng-app === initializes app in angular
+ng-model === bind values of html

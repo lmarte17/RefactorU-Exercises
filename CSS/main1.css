@@ -1,0 +1,23 @@
+body {
+    background-color: palegoldenrod;
+}
+
+.outer {
+    height: 600px;
+    width: 400px;
+    background-color: rebeccapurple;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

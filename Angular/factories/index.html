@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html ng-app="myApp">
+    <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="js/main.js"></script>
+        <title>Travel App</title>
+    </head>
+    
+    <body>
+        <h1>Welcome to our map!</h1>
+        
+        <section ng-controller="parkLotCtrl as park">
+            {{ park.greeting }}
+            
+            <ul>
+                <li ng-repeat="lot in park.lot | orderBy: 'capacity' | filter: park.filterLots">
+                    {{ lot.capacity }}
+                    {{ lot.cost | currency}}
+                    {{ lot.location }}
+                </li>
+            </ul>
+        </section>
+        
+        <hr>
+        
+        <section ng-controller="restCtrl as rest">
+            {{ rest.greeting }}
+            
+            <h2>Restaurants:</h2>
+            <input placeholder="Search Names..." ng model="rest.restFilter" />
+            
+            <ul>
+                <li ng-repeat="rest in rest.restaurant | filter:rest.restFilter">
+                    {{ rest.name }}
+                    {{ rest.style }}
+                    <!--{{ rest.getNearestLot($index) }}-->
+                    
+                    <ul>
+                        <li ng-repeat="item in rest.menu">
+                    {{ item }}
+                </li>
+            </ul>
+                </li>
+            </ul>
+        </section>
+        
+    </body>
+</html>
