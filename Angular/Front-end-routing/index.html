@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="CremeFraiche">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body ng-controller="SoFreshAndSoCreamCream as cCtrl">
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#/origins">Origins</a></li>
+            <li><a href="#/menu">menu</a></li>
+        </ul>
+    </nav>
+    Hello {{ cCtrl.greeting }}
+
+    <ng-view>
+        <!--This is where our templates go -->
+    </ng-view>
+
+    <footer>
+        Copyright 2016
+    </footer>
+
+</body>

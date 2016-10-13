@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="pokeapp">
+
+<head>
+    <title>AJAX</title>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body ng-controller="PokeController as pCtrl">
+    <h1>Hello!</h1>
+    <p>{{ pCtrl.message }}</p>
+
+    <h3>{{ pCtrl.myData.name }} weighs {{ pCtrl.myData.weight }} pounds and is {{ pCtrl.myData.height }} inches tall.</h3>
+
+    <form ng-submit="pCtrl.getMyPokemon()">
+        <input type="Number" ng-model="pCtrl.pokemonNum" placeholder="Pokemon number"></input>
+    </form>
+</body>
+
+</html>

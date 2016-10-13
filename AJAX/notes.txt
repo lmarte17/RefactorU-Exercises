@@ -1,0 +1,18 @@
+AJAX - Asynchronous JavaScript and XML(JSON)
+make HTTP requests from JS in your browser and uses respnses
+
+singleton - a single object.never has 2 copies of same instantiation of a singleton class.
+
+HTTP
+  - Get:    retrieve from web server
+  - Put:    create new resource on server
+  - Post:   replace or update
+  - Patch:  updates
+  - Delete: removes a resource
+
+
+HTML response code
+  - 200s = success
+  - 300s = redirect
+  - 400s = client error
+  - 500s = server error
